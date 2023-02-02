@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('horrorbg.jpg');
+  background-size: cover;
+}
+
+.container
+{
+padding: 5px;
+max-width: 90%;
+width: 78%;
+margin: 5px auto;
+}
+
+
+h1{
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 40px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .horror
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    
+  }
+  
+p{
+  font-size: 14px;
+}
+
+p.horror_title{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p.modal_para
+{
+  font-size: 15px;
+  white-space: 5px;
+  line-height: 25px;
+}
+.column
+{
+  flex: 1;
+  border: 1px solid;
+  margin: 0 50px;
+  padding: 30px;
+  background-color:whitesmoke;
+  transition: 0.3s;
+  justify-content: center;
+  text-align: center;
+  line-height: 40px;
+}
+img{
+  width: 190px;
+  height: 270px;
+  cursor: pointer;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+img.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+} 
+
+.preview {
+  width: 100%;
+}
+
+button{
+  background-color:royalblue;
+  color: white;
+  padding: 10px 5px;
+  font-size: 15px;
+  border: 0.5px solid black;
+  border-radius:15px;
+}
+
+button:hover
+{
+  background-color:lightskyblue;
+  color: black;
+
+}
+
+.modal
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+  overflow-y: auto;
+}
+
+.modal-content
+{
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  max-height: 80%;
+  margin: 50px 0;
+  background: linear-gradient(to right, #63a28e 10%, #b4bcb4 80%);
+
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+
+.modal-body img
+{
+display: block;
+width: 120px;
+height: 170px;
+margin: 10px auto;
+align-items: center;
+}
+
+.modal-body{
+  padding: 10px 25px;
+}
+.modal-footer
+{
+  width: fit-content;
+  margin: 10px 15px;
+
+}
+.modal-footer .modal-close
+{
+  color: white;
+  padding: 10px 5px;
+  font-size: 15px;
+  border: 0.5px solid black;
+  border-radius:10px;
+  cursor: pointer;
+
+}
+.modal-header i{
+  padding: 10px;
+  float: right;
+  cursor: pointer;
+  margin-left: auto;
+  size: 30px;
+}
+

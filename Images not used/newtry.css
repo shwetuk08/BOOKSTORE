@@ -1,0 +1,71 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto',sans-serif;
+}
+
+.modal-open
+{
+  padding: 8px 16px;
+
+}
+.modal
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: none;
+  overflow-y: auto;
+
+}
+.modal-content
+{
+  background-color: azure;
+  margin-top: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  z-index:4;
+
+}
+
+.modal-header
+{
+padding: 10px 0;
+font-size: 20px;
+font-weight: 500px;
+}
+
+.modal-header .modal-close
+{
+  float: right;
+  font-size: 15px;
+}
+
+.modal-body
+{
+  background-color: bisque;
+  padding: 15px 0;
+}
+.modal-footer
+{
+  padding: 8px 16px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: black;
+}
+
+
+img{
+    width: 180px;
+    height: 260px;
+    cursor: pointer;
+  }

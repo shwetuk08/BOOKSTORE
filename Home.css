@@ -1,0 +1,38 @@
+
+body
+{
+    min-height: 100vh;
+    background-image: url("homebg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h4
+{
+color: #d1dbdb;
+font-size: 50px;
+font-style: italic;
+font-family: cursive;
+line-height: 100px;
+}
+.main_heading
+{
+font-size: 90px;
+color: cornsilk;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hometext {
+    
+    position: absolute;
+    top: 39%;
+    left: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+
